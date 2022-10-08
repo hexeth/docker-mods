@@ -2,11 +2,14 @@
 
 if [ -f /usr/bin/apt ]; then
     ## Ubuntu
-    echo "\
-        iptables \
-        openssh-client \
-        python3 \
-        python3-pip" >> /mod-repo-packages-to-install.list
+   add-apt-repository ppa:oibaf/graphics-drivers -y
+   echo "\
+        software-properties-common \
+        vainfo \
+	      mesa-va-drivers \
+	      mesa-vdpau-drivers \
+      	libdrm-amdgpu1 \
+	      libavutil56" >> /mod-repo-packages-to-install.list
 fi
 
 if [ -f /sbin/apk ]; then
