@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "hexeth/docker-modss"
+  ENDPOINT: "hexeth/plex-amd-gpu"
   BRANCH: "master"
 
 jobs:
